@@ -1,0 +1,8 @@
+## Tor opens a socks proxy on port 9150
+SocksPort 0.0.0.0:9150
+
+## Entry policies to allow/deny SOCKS requests based on IP address.
+SocksPolicy accept *
+
+## Logs go to stdout at level "notice"
+Log notice stdout
