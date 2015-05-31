@@ -3,6 +3,7 @@ RUN apk update
 RUN apk add tor --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
 EXPOSE 9150
+EXPOSE 9151
 
 RUN rm /var/cache/apk/*
 
