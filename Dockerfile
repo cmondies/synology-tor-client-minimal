@@ -7,7 +7,6 @@ RUN apk add tor --update-cache --repository http://dl-4.alpinelinux.org/alpine/e
 EXPOSE 9150
 
 RUN rm /var/cache/apk/*
-RUN mkdir /var/lib/tor
 
 ADD ./torrc /etc/tor/torrc
 # Allow you to upgrade your relay without having to regenerate keys
