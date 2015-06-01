@@ -10,7 +10,7 @@ RUN rm /var/cache/apk/*
 
 ADD ./torrc /etc/tor/torrc
 # Allow you to upgrade your relay without having to regenerate keys
-VOLUME /etc/tor/
+# VOLUME /etc/tor/
 
 # Generate a random nickname for the relay
 RUN echo "Nickname docker$(head -c 16 /dev/urandom  | sha1sum | cut -c1-10)" >> /etc/tor/torrc
