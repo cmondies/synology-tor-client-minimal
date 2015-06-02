@@ -3,6 +3,7 @@ DataDirectory /var/lib/tor
 ## Tor opens a socks proxy on port 9150
 SocksPort 0.0.0.0:9150
 SocksPolicy accept 192.168.1.0/24
+SocksPolicy reject *
 
 ## Entry policies to allow/deny SOCKS requests based on IP address.
 SocksPolicy accept *
