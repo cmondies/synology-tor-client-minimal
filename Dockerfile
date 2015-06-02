@@ -12,5 +12,4 @@ RUN rm /var/cache/apk/*
 ADD ./torrc /etc/tor/torrc
 
 USER tor
-#CMD /usr/bin/tor -f /etc/tor/torrc
-CMD ["bash"]
+CMD /usr/bin/tor -f /etc/tor/torrc
