@@ -1,2 +1,3 @@
 # synology-tor-client-minimal
-synology-tor-client-minimal
+
+Tor client (Socks proxy) 
