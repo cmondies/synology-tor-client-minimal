@@ -7,7 +7,7 @@ RUN apk add tor --update-cache --repository http://dl-4.alpinelinux.org/alpine/e
 
 # install arm https://www.atagar.com/arm/
 RUN cd /tmp && curl https://www.atagar.com/arm/resources/static/arm-1.4.5.0.tar.bz2
-RUN cd /tmp && tar xvjf -C ./arm-1.4.5.0.tar.bz2
+RUN  tar xvjf /tmp/arm-1.4.5.0.tar.bz2
 
 EXPOSE 9150
 
