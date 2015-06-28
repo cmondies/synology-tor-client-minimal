@@ -11,7 +11,7 @@ SocksPolicy reject *
 ## Logs go to stdout at level "notice"
 Log notice stdout
 
-ControlPort 9151
+ControlPort 9051
 
 # Try for at most NUM seconds when building circuits. If the circuit isn't open in that time, give up on it. (Default: 1 minute.)           
 CircuitBuildTimeout 5                                                                                                                       
