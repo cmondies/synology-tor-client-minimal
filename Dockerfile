@@ -6,7 +6,6 @@ RUN apk add bash python
 RUN apk add tor --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
 ADD ./arm-1.4.5.0.tar.bz2 /tmp/arm-1.4.5.0.tar.bz2
-RUN 
 
 RUN cd /tmp/ && bunzip2 arm-1.4.5.0.tar.bz
 RUN cd /tmp/ && tar xvf arm-1.4.5.0
