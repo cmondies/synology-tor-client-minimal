@@ -7,7 +7,7 @@ RUN apk add tor --update-cache --repository http://dl-4.alpinelinux.org/alpine/e
 
 ADD ./arm-1.4.5.0.tar /tmp/arm-1.4.5.0.tar
 
-RUN cd /tmp/ && tar xvf arm-1.4.5.0
+RUN cd /tmp/ && tar xvf arm-1.4.5.0.tar
 RUN cd /tmp/arm-1.4.5.0 && ./install
 
 
