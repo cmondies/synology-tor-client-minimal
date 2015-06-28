@@ -16,6 +16,6 @@ CircuitBuildTimeout 5
 # Send a padding cell every N seconds to keep firewalls from closing our connections while Tor is not in use.                               
 KeepalivePeriod 60                                                                                                                          
 # Force Tor to consider whether to build a new circuit every NUM seconds.                                                                   
-NewCircuitPeriod 120                                                                                                                        
+NewCircuitPeriod 15                                                                                                                       
 # How many entry guards should we keep at a time?                                                                                           
 NumEntryGuards 8  
