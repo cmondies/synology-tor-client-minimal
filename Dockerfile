@@ -6,6 +6,8 @@ RUN apk add bash python curl
 RUN apk add tor --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
 # install arm https://www.atagar.com/arm/
+RUN curl -O https://www.atagar.com/arm/resources/static/arm-1.4.5.0.tar.bz2 | tar xvjf -C /tmp
+RUN cd /tmp/arm && ./install
 
 EXPOSE 9150
 
