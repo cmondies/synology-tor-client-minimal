@@ -5,7 +5,8 @@ DataDirectory /var/lib/tor
 SocksPort 0.0.0.0:9150
 
 ## Entry policies to allow/deny SOCKS requests based on IP address.
-SocksPolicy accept 192.168.1.0/24
+## SocksPolicy accept 192.168.1.0/24
+SocksPolicy accept 172.17.0.0/16
 SocksPolicy reject *
 
 ## Logs go to stdout at level "notice"
